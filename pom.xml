@@ -8,6 +8,7 @@
     <modules>
         <module>backend-logic</module>
         <module>backend-web</module>
+        <module>backend-model</module>
     </modules>
     <name>tk.lslayer.backend-parent</name>
     <url>http://maven.apache.org</url>
@@ -19,4 +20,17 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+		<version>3.6.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
